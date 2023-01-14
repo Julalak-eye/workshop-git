@@ -1,3 +1,4 @@
+import InputField from '@components/commons/Input/InputField'
 import { dataProducts } from '@containers/bill/constants'
 import { Product } from '@containers/bill/interface'
 import {
@@ -30,12 +31,16 @@ const BillContainer = (): ReactElement => {
           <Row gutter={[8, 8]}>
             <Col span={7}>
               <TitleNoMargin level={5}>เล่มที่</TitleNoMargin>
-              <TitleNoMargin level={5}>Book no. ___________</TitleNoMargin>
+              <TitleNoMargin level={5}>
+                Book no. <InputField />
+              </TitleNoMargin>
             </Col>
             <StyledEmptyBox flex={1} />
             <Col span={7}>
               <TitleNoMargin level={5}>เลขที่</TitleNoMargin>
-              <TitleNoMargin level={5}>Bill no. ___________</TitleNoMargin>
+              <TitleNoMargin level={5}>
+                Bill no. <InputField />
+              </TitleNoMargin>
             </Col>
           </Row>
         </StyledHeader>
@@ -46,19 +51,27 @@ const BillContainer = (): ReactElement => {
           <Row>
             <Col span={16}>
               <TitleNoMargin level={5}>นาม</TitleNoMargin>
-              <TitleNoMargin level={5}>Name ________________________________________</TitleNoMargin>
+              <TitleNoMargin level={5}>
+                Name <InputField />
+              </TitleNoMargin>
             </Col>
             <Col span={8}>
               <TitleNoMargin level={5}>วันที่</TitleNoMargin>
-              <TitleNoMargin level={5}>Date _________________</TitleNoMargin>
+              <TitleNoMargin level={5}>
+                Date <InputField />
+              </TitleNoMargin>
             </Col>
             <Col span={16}>
               <TitleNoMargin level={5}>ที่อยู่</TitleNoMargin>
-              <TitleNoMargin level={5}>Address ______________________________________</TitleNoMargin>
+              <TitleNoMargin level={5}>
+                Address <InputField />
+              </TitleNoMargin>
             </Col>
             <Col span={8}>
               <TitleNoMargin level={5}>เลขผู้เสียภาษี</TitleNoMargin>
-              <TitleNoMargin level={5}>TaxId _________________</TitleNoMargin>
+              <TitleNoMargin level={5}>
+                TaxId <InputField />
+              </TitleNoMargin>
             </Col>
           </Row>
         </StyledSubHeaderDetail>
